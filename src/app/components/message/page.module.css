@@ -1,0 +1,28 @@
+.sentWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: .5rem;
+}
+
+.receivedWrapper {
+    display: flex;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+
+.messageContainer {
+    padding: 10px 20px;
+    max-width: 50%;
+}
+
+.sent {
+    background-color: var(--zinc-secundary);
+    border-radius: 10px 10px 0px 10px;
+}
+
+.received {
+    background-color: var(--red-main);
+    border-radius: 10px 10px 10px 0px;
+}

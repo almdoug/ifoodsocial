@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--red-main);
+    padding: .8rem 2rem;
+    border-radius: 10px;
+}
+
+.userContainer {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+
+.userInfo p:first-of-type {
+    font-weight: 700;
+}
+
+.userInfo p:last-of-type{
+    color: #cdcdcd;
+    font-weight: 500;
+}
