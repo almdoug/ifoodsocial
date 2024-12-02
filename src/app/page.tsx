@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import send from "../assets/enviar.svg";
 import Header from "./components/header/page"
 import Message from "./components/message/page"
+import { Standard } from "@typebot.io/nextjs";
 
 export default function Home() {
   return (
@@ -12,28 +13,10 @@ export default function Home() {
         <h3>AI <span>Chatbot</span> - IFOOD SOCIAL</h3>
         <hr />
         <div className={styles.chatContainer}>
-          <div className={styles.messagesContainer}>
-            <Message
-              type={"sent"}
-            >
-              Enviada
-            </Message>
-            <Message
-              type={"received"}
-            >
-              Oiiii
-            </Message>
-            <Message
-              type={"received"}
-            >
-              Recebida
-            </Message>
-            <Message
-              type={"sent"}
-            >
-              Oiiii
-            </Message>
-          </div>
+          <Standard
+            typebot="ifood-social-77hyjxb"
+            style={{ width: "100%", height: "600px" }}
+          />
           <form>
             <label htmlFor="msg" className={styles.messageInput}>
               <input
