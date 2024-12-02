@@ -38,6 +38,14 @@
   background-color: var(--zinc-main);
 }
 
+.messagesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  height: 100%;
+  overflow-y: auto;
+}
+
 .messageInput {
   display: flex;
   gap: 1rem;
